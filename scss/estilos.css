@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap");
+* {
+  font-family: "Quicksand";
+}
+
+.font-weight-light {
+  font-weight: 300;
+}
+
+.font-weight-regular {
+  font-weight: 400;
+}
+
+.font-weight-medium {
+  font-weight: 500;
+}
+
+.font-weight-semi-bold {
+  font-weight: 600;
+}
+
+.font-weight-bold {
+  font-weight: 700;
+}
+
+.bgNaranja {
+  background-color: #E05206;
+}
+
+.naranja {
+  color: #E05206;
+}
+
+.bgCyan {
+  background-color: #009AA6;
+}
+
+.cyan {
+  color: #009AA6;
+}
+
+.logo-horizontal {
+  margin: 10px;
+  display: block;
+  width: 200px;
+}
+
+.logo-vertical {
+  margin: 10px;
+  display: block;
+  width: 150px;
+}
+
+.tituloPrincipal {
+  margin: auto;
+  text-align: center;
+}
+
+.videoOAJNU {
+  width: 100%;
+  height: 50vh;
+  padding: 10px;
+}
+
+.fotoProyecto {
+  width: 300px;
+}
+
+.boton {
+  background-color: #009AA6;
+  border: none;
+  margin: 10px;
+}
+.boton:hover {
+  transform: scale(1.2);
+  background-color: #FFFFFF;
+  border: solid #009AA6;
+  color: #009AA6;
+}
+.boton:active {
+  background-color: #009AA6;
+  border: none;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+.boton a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+.boton a:hover {
+  color: #009AA6;
+}
+
+iframe {
+  margin: 0;
+  padding: 0;
+}
+
+.somosFoto {
+  width: 100px;
+}
+
+#somos {
+  display: none;
+}
+
+#aliados {
+  display: none;
+}
+
+.logoRedes {
+  height: 30px;
+}
+
+.fijado {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  width: 50px;
+}
+
+@media all and (min-width: 992px) {
+  #somos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #carouselSomos {
+    display: none;
+  }
+
+  #aliados {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3;
+    overflow: auto;
+  }
+
+  .aliadosFoto {
+    height: 100px;
+  }
+
+  #carouselAliados {
+    display: none;
+  }
+
+  #siteHeader {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  }
+
+  .fijado {
+    bottom: 50px;
+    right: 50px;
+  }
+}/*# sourceMappingURL=estilos.css.map */
