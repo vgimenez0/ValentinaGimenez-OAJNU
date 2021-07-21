@@ -34,6 +34,14 @@
 	color: $color-secundario;
 }
 
+#proyectos div div{
+	height:350px;
+}
+
+#sumate div div{
+	height:350px;
+}
+
 .logo-horizontal{
 	margin: 10px;
 	display: block;
@@ -57,34 +65,28 @@
 	padding: 10px;
 }
 
-.fotoProyecto{
-	width: 300px;
-}
-
 .boton{
 	background-color: $color-secundario;
 	border: none;
 	margin: 10px;
+	a{
+        color: #FFFFFF;
+        text-decoration: none;
+    }
     &:hover{
         transform: scale(1.2);
         background-color: #FFFFFF;
-        border: solid $color-secundario;
+        border: solid 0.5px $color-secundario;
 		color: $color-secundario;
+		a{
+			color: $color-secundario;
+		}
     }
-
     &:active{
         background-color: $color-secundario;
         border: none;
         color: #FFFFFF;
         text-decoration: none;
-    }
-
-    a{
-        color: #FFFFFF;
-        text-decoration: none;
-        &:hover{
-            color: $color-secundario;
-        }
     }
 }
 
@@ -115,9 +117,24 @@ iframe{
 	width: 50px;
 }
 
+.fotoProyecto{
+	width: 300px;
+}
+
+.fotoQuienessomos{
+	width: 300px;
+}
+
+.divQUienessomos{
+	width: 350px;
+}
+
 @media all and (min-width: 992px){
 	#somos{
-		@include flexible(row,space-between,center);
+		@include flexible(row,space-around,center);
+		div{
+			@include flexible(column,center,center);
+		}
 	}
 
 	#carouselSomos{
@@ -148,4 +165,27 @@ iframe{
 		right: 50px;
 	}
 
+	.divSomos:hover{
+		transform: scale(1.2);
+	}
+
+	#somos div h4{
+		font-size: 15px;
+	}
+
+	#somos div{
+		height: 200px;
+	}
+	
+	.fotoProyecto:hover{
+		transform: scale(1.2);
+	}
+
+	.divQuienesSomos{
+		padding-bottom: 20px;
+		&:hover{
+			transform: scale(1.1);
+		}
+
+	}
 }

@@ -39,6 +39,14 @@
   color: #009AA6;
 }
 
+#proyectos div div {
+  height: 350px;
+}
+
+#sumate div div {
+  height: 350px;
+}
+
 .logo-horizontal {
   margin: 10px;
   display: block;
@@ -62,19 +70,22 @@
   padding: 10px;
 }
 
-.fotoProyecto {
-  width: 300px;
-}
-
 .boton {
   background-color: #009AA6;
   border: none;
   margin: 10px;
 }
+.boton a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
 .boton:hover {
   transform: scale(1.2);
   background-color: #FFFFFF;
-  border: solid #009AA6;
+  border: solid 0.5px #009AA6;
+  color: #009AA6;
+}
+.boton:hover a {
   color: #009AA6;
 }
 .boton:active {
@@ -82,13 +93,6 @@
   border: none;
   color: #FFFFFF;
   text-decoration: none;
-}
-.boton a {
-  color: #FFFFFF;
-  text-decoration: none;
-}
-.boton a:hover {
-  color: #009AA6;
 }
 
 iframe {
@@ -119,11 +123,29 @@ iframe {
   width: 50px;
 }
 
+.fotoProyecto {
+  width: 300px;
+}
+
+.fotoQuienessomos {
+  width: 300px;
+}
+
+.divQUienessomos {
+  width: 350px;
+}
+
 @media all and (min-width: 992px) {
   #somos {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
+    align-items: center;
+  }
+  #somos div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
   }
 
@@ -159,5 +181,28 @@ iframe {
   .fijado {
     bottom: 50px;
     right: 50px;
+  }
+
+  .divSomos:hover {
+    transform: scale(1.2);
+  }
+
+  #somos div h4 {
+    font-size: 15px;
+  }
+
+  #somos div {
+    height: 200px;
+  }
+
+  .fotoProyecto:hover {
+    transform: scale(1.2);
+  }
+
+  .divQuienesSomos {
+    padding-bottom: 20px;
+  }
+  .divQuienesSomos:hover {
+    transform: scale(1.1);
   }
 }/*# sourceMappingURL=estilos.css.map */
