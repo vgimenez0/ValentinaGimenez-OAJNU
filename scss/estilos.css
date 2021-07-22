@@ -95,6 +95,33 @@
   text-decoration: none;
 }
 
+.botonNaranja {
+  background-color: #E05206;
+  border: none;
+  margin: 10px;
+  padding: 10px;
+}
+.botonNaranja a {
+  color: #FFFFFF;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+.botonNaranja:hover {
+  transform: scale(1.2);
+  background-color: #FFFFFF;
+  border: solid 0.5px #E05206;
+  color: #E05206;
+}
+.botonNaranja:hover a {
+  color: #E05206;
+}
+.botonNaranja:active {
+  background-color: #E05206;
+  border: none;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
 iframe {
   margin: 0;
   padding: 0;
