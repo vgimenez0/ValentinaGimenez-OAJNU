@@ -68,41 +68,48 @@
   </main>
 
   <footer>
-    <div class="bgCyan p-2">
-      <h4 class="py-4 text-white bgCyan m-0">Completá el formulario para recibir información sobre la convocatoria para ser voluntario/a</h4>
-      <form action="recibe.html" method="POST" enctype="multipart/form-data" class="text-light">
-        <input type="text" name="nombre" placeholder="Nombre y Apellido" class="d-block">
-        <input type="email" name="email" placeholder="Dirección de correo electrónico" class="d-block">
-        <label>Provincia de residencia:</label>
-        <select name="provincia">
-          <option value="z">Seleccionar</option>
-          <option value="a">Buenos Aires</option>
-          <option value="b">Catamarca</option>
-          <option value="c">Chaco</option>
-          <option value="d">Chubut</option>
-          <option value="e">Córdoba</option>
-          <option value="f">Corrientes</option>
-          <option value="g">Entre Ríos</option>
-          <option value="h">Formosa</option>
-          <option value="i">Jujuy</option>
-          <option value="j">La Pampa</option>
-          <option value="k">La Rioja</option>
-          <option value="l">Mendoza</option>
-          <option value="m">Misiones</option>
-          <option value="n">Neuquén</option>
-          <option value="o">Río Negro</option>
-          <option value="p">Salta</option>
-          <option value="q">San Juan</option>
-          <option value="r">San Luis</option>
-          <option value="s">Santa Cruz</option>
-          <option value="t">Santa Fe</option>
-          <option value="u">Santiago del Estero</option>
-          <option value="v">Tierra del Fuego</option>
-          <option value="w">Tucumán</option>
-        </select>
-        <button type="button" class="btn btn-light d-block" data-toggle="modal" data-target="#enviarModal">Enviar</button>
-      </form>
-    </div>
+		<div class="bgCyan p-2">
+			<h5 class="text-light font-weight-semi-bold">Completá el formulario para recibir información sobre la covocatoria a nuevos/as voluntarios/as de este año</h5>
+			<form action="recibe.html" method="POST" enctype="multipart/form-data" class="text-light bgCyan col-lg-4">
+				<div class="form-group">
+					<input type="name" class="form-control" placeholder="Nombre y Apellido">
+				</div>
+				<div class="form-group">
+					<input type="email" class="form-control" placeholder="Dirección de correo electrónico">
+				</div>
+				<div class="form-group">
+          <label for="exampleFormControlSelect1" class="text-light">Provincia de residencia:</label>
+          <select class="form-control" id="exampleFormControlSelect1">
+            <option value="a">Buenos Aires</option>
+            <option value="b">Catamarca</option>
+            <option value="c">Chaco</option>
+            <option value="d">Chubut</option>
+            <option value="e">Córdoba</option>
+            <option value="f">Corrientes</option>
+            <option value="g">Entre Ríos</option>
+            <option value="h">Formosa</option>
+            <option value="i">Jujuy</option>
+            <option value="j">La Pampa</option>
+            <option value="k">La Rioja</option>
+            <option value="l">Mendoza</option>
+            <option value="m">Misiones</option>
+            <option value="n">Neuquén</option>
+            <option value="o">Río Negro</option>
+            <option value="p">Salta</option>
+            <option value="q">San Juan</option>
+            <option value="r">San Luis</option>
+            <option value="s">Santa Cruz</option>
+            <option value="t">Santa Fe</option>
+            <option value="u">Santiago del Estero</option>
+            <option value="v">Tierra del Fuego</option>
+            <option value="w">Tucumán</option>
+          </select>
+        </div>
+			</form>
+			<div class="bgCyan p-3">
+				<button type="button" class="btn btn-light" data-toggle="modal" data-target="#enviarModal">Enviar</button>
+			</div>
+		</div>
 
     <div class="modal" tabindex="-1" id="enviarModal">
       <div class="modal-dialog">
