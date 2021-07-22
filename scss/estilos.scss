@@ -212,6 +212,10 @@ iframe{
 	}
 }
 
+.footerVoluntariado{
+	bottom: 0;
+}
+
 @media all and (min-width: 768px){
 	#somosM{
 		@include flexible(row,space-around,center);

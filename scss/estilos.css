@@ -224,6 +224,10 @@ iframe {
   width: 200px;
 }
 
+.footerVoluntariado {
+  bottom: 0;
+}
+
 @media all and (min-width: 768px) {
   #somosM {
     display: flex;
