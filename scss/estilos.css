@@ -108,6 +108,10 @@ iframe {
   display: none;
 }
 
+#somosM {
+  display: none;
+}
+
 #aliados {
   display: none;
 }
@@ -121,6 +125,7 @@ iframe {
   bottom: 10px;
   right: 10px;
   width: 50px;
+  z-index: 3;
 }
 
 .fotoProyecto {
@@ -219,6 +224,38 @@ iframe {
   width: 200px;
 }
 
+@media all and (min-width: 768px) {
+  #somosM {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  #somosM div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #somos {
+    display: none;
+  }
+
+  #carouselSomos {
+    display: none;
+  }
+
+  #somosM div h4 {
+    font-size: 15px;
+  }
+
+  #somosM div {
+    height: 200px;
+    margin: 10px;
+  }
+}
 @media all and (min-width: 992px) {
   #somos {
     display: flex;
@@ -231,6 +268,10 @@ iframe {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+
+  #somosM {
+    display: none;
   }
 
   #carouselSomos {

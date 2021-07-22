@@ -103,6 +103,10 @@ iframe{
 	display: none;
 }
 
+#somosM{
+	display: none;
+}
+
 #aliados{
 	display: none;
 }
@@ -115,6 +119,7 @@ iframe{
 	bottom: 10px;
 	right: 10px;
 	width: 50px;
+	z-index: 3;
 }
 
 .fotoProyecto{
@@ -207,12 +212,43 @@ iframe{
 	}
 }
 
+@media all and (min-width: 768px){
+	#somosM{
+		@include flexible(row,space-around,center);
+		flex-wrap: wrap;
+		div{
+			@include flexible(column,center,center);
+		}
+	}
+
+	#somos{
+		display: none;
+	}
+
+	#carouselSomos{
+		display: none;
+	}
+
+	#somosM div h4{
+		font-size: 15px;
+	}
+
+	#somosM div{
+		height: 200px;
+		margin: 10px;
+	}
+}
+
 @media all and (min-width: 992px){
 	#somos{
 		@include flexible(row,space-around,center);
 		div{
 			@include flexible(column,center,center);
 		}
+	}
+
+	#somosM{
+		display: none;
 	}
 
 	#carouselSomos{

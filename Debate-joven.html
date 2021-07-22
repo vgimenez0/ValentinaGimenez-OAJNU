@@ -61,7 +61,9 @@
 	<main>
 		<h1 class="naranja tituloPrincipal font-weight-bold py-4">DEBATE JOVEN</h1>
 		<div class="row mx-auto container justify-content-around">
-			<iframe src="https://player.vimeo.com/video/573681035?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="960" height="540" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="Debate Joven 2018"></iframe>
+			<div class="row mx-auto container justify-content-center">
+				<iframe src="https://player.vimeo.com/video/573681035" width="960" height="540" frameborder="0" allowfullscreen></iframe>
+			</div>
 			<div class="container">
 				<div class="border rounded p-4 m-5 textoProyecto">
 					<h3 class="text-center mb-4 naranja">¿Qué es?</h3>
@@ -81,19 +83,32 @@
 
 	<footer>
 		<div class="bgCyan p-2">
-			<h4 class="text-light">Completá el formulario para recibir información de la edición de este año</h4>
-			<form action="recibe.html" method="POST" enctype="multipart/form-data" class="text-light bgCyan">
-				<input type="text" name="nombre" placeholder="Nombre y Apellido" class="d-block">
-				<input type="email" name="email" placeholder="Dirección de correo electrónico" class="d-block">
-				<label>Soy:</label>
-				<label for="estudiante">Estudiante</label>
-				<input type="radio" name="opciones" id="estudiante" value="1">
-				<label for="docente">Docente</label>
-				<input type="radio" name="opciones" id="docente" value="2">
-				<label for="otro">Otro</label>
-				<input type="radio" name="opciones" id="otro" value="3">
-				<button type="button" class="btn btn-light d-block" data-toggle="modal" data-target="#enviarModal">Enviar</button>
+			<h5 class="text-light font-weight-semi-bold">Completá el formulario para recibir información de la edición de este año</h5>
+			<form action="recibe.html" method="POST" enctype="multipart/form-data" class="text-light bgCyan col-lg-4">
+				<div class="form-group">
+					<input type="name" class="form-control" placeholder="Nombre y Apellido">
+				</div>
+				<div class="form-group">
+					<input type="email" class="form-control" placeholder="Dirección de correo electrónico">
+				</div>
+				<label class="text-light">Soy:</label>
+				<div class="form-check form-check-inline">
+					<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+					<label class="form-check-label" for="inlineRadio1">Estudiante</label>
+				  </div>
+				  <div class="form-check form-check-inline">
+					<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+					<label class="form-check-label" for="inlineRadio2">Docente</label>
+				  </div>
+				  <div class="form-check form-check-inline">
+					<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option2">
+					<label class="form-check-label" for="inlineRadio3">Otro</label>
+				  </div>
+				</div>
 			</form>
+			<div class="bgCyan p-3">
+				<button type="button" class="btn btn-light" data-toggle="modal" data-target="#enviarModal">Enviar</button>
+			</div>
 		</div>
 
 		<div class="modal" tabindex="-1" id="enviarModal">
