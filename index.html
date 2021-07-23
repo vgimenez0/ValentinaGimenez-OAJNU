@@ -64,7 +64,11 @@
     </div>
 
     <div class="headerVideo">
-      <video src="media/videofondo.mp4" autoplay loop muted ></video>
+      <video autoplay loop muted>
+        <source src="media/videofondo.mp4">
+        <source src="media/videofondo.ogg">
+        <source src="media/videofondo.webm">
+      </video>
     </div>
     <div class="headerOverlay">
     </div>
@@ -82,31 +86,31 @@
 
     <div id="carouselSomos" class="carousel slide col-12 col-md-6 justify-content-center mx-auto" data-ride="carousel">
       <div class="carousel-inner">
-        <div class="carousel-item active">
+        <div class="carousel-item active divCarousel">
           <img src="media/ongc.svg" class="d-block w-100 p-3 " alt="...">
           <div class="text-center d-md-block">
             <h4 class="cyan text-bold">Organización No Gubernamental</h4>
           </div>
         </div>
-        <div class="carousel-item">
+        <div class="carousel-item divCarousel">
           <img src="media/lucro.svg" class="d-block w-100 p-3" alt="...">
           <div class="text-center d-md-block">
             <h4 class="cyan text-bold">Sin fines de lucro</h4>
           </div>
         </div>
-        <div class="carousel-item">
+        <div class="carousel-item divCarousel">
           <img src="media/apartidariac.svg" class="d-block w-100 p-3" alt="...">
           <div class="text-center d-md-block">
             <h4 class="cyan text-bold">Apartidaria y pluralista</h4>
           </div>
         </div>
-        <div class="carousel-item">
+        <div class="carousel-item divCarousel">
           <img src="media/jovenes.svg" class="d-block w-100 p-3" alt="...">
           <div class="text-center d-md-block">
             <h4 class="cyan text-bold">Creada y dirigida por jóvenes voluntarios/as</h4>
           </div>
         </div>
-        <div class="carousel-item">
+        <div class="carousel-item divCarousel">
           <img src="media/puñoc.svg" class="d-block w-100 p-3" alt="...">
           <div class="text-center d-md-block">
             <h4 class="cyan text-bold">Buscamos generar una sociedad más inclusiva, democrática y promotora de derechos
