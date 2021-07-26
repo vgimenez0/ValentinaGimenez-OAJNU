@@ -176,7 +176,7 @@ iframe {
   z-index: -100;
   left: 0;
   width: 100%;
-  height: calc( 100vw*0.5625 );
+  height: calc( 100vw*1.6216 );
   overflow: hidden;
 }
 .headerVideo video {
@@ -190,7 +190,7 @@ iframe {
   z-index: 1;
   left: 0;
   width: 100%;
-  height: calc( 100vw*0.5625 );
+  height: calc( 100vw*1.6216 );
   overflow: hidden;
   background-color: #FFFFFF;
   opacity: 0.5;
@@ -199,7 +199,7 @@ iframe {
 .headerContent {
   z-index: 2;
   width: 100%;
-  height: calc( 100vw*0.5625 );
+  height: calc( 100vw*1.6216 );
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -210,6 +210,10 @@ iframe {
 }
 
 .headerContent h2 {
+  display: none;
+}
+
+#videofondoDesktop {
   display: none;
 }
 
@@ -259,6 +263,16 @@ iframe {
   bottom: 0;
 }
 
+.videoProyecto {
+  padding: 56.25% 0 0 0;
+  position: relative;
+  margin: 10px;
+}
+
+.videoProyectoDesktop {
+  display: none;
+}
+
 @media all and (min-width: 768px) {
   #somosM {
     display: flex;
@@ -290,6 +304,36 @@ iframe {
     height: 200px;
     margin: 10px;
   }
+
+  #videofondo {
+    display: none;
+  }
+
+  #videofondoDesktop {
+    display: block;
+  }
+
+  .headerVideo {
+    height: calc( 100vw*0.5625 );
+  }
+
+  .headerOverlay {
+    height: calc( 100vw*0.5625 );
+  }
+
+  .headerContent {
+    height: calc( 100vw*0.5625 );
+  }
+
+  .videoProyecto {
+    padding: 56.25% 0 0 0;
+    position: relative;
+    margin: 10px;
+  }
+
+  .videoProyectoDesktop {
+    display: none;
+  }
 }
 @media all and (min-width: 992px) {
   #somos {
@@ -315,6 +359,26 @@ iframe {
 
   #banner h1 {
     font-size: 2.5rem;
+  }
+
+  #videofondo {
+    display: none;
+  }
+
+  #videofondoDesktop {
+    display: block;
+  }
+
+  .headerVideo {
+    height: calc( 100vw*0.5625 );
+  }
+
+  .headerOverlay {
+    height: calc( 100vw*0.5625 );
+  }
+
+  .headerContent {
+    height: calc( 100vw*0.5625 );
   }
 
   .headerContent h2 {
@@ -398,5 +462,13 @@ iframe {
   }
   .contAliados:hover {
     transform: scale(1.1);
+  }
+
+  .videoProyectoDesktop {
+    display: flex;
+  }
+
+  .videoProyecto {
+    display: none;
   }
 }/*# sourceMappingURL=estilos.css.map */
