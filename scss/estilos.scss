@@ -196,7 +196,7 @@ iframe{
 	height: calc( 100vw*1.6216 );
 	@include flexible(column,center,center);
 	img{
-		width: 50%;
+		width: 70%;
 	}
 }
 
@@ -305,6 +305,9 @@ iframe{
 	
 	.headerContent{
 		height: calc( 100vw*0.5625 );
+		img{
+			width: 50%;
+		}
 	}
 
 	.videoProyecto{
@@ -356,6 +359,9 @@ iframe{
 	
 	.headerContent{
 		height: calc( 100vw*0.5625 );
+		img{
+			width: 50%;
+		}
 	}
 		
 	.headerContent h2{

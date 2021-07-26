@@ -206,7 +206,7 @@ iframe {
   align-items: center;
 }
 .headerContent img {
-  width: 50%;
+  width: 70%;
 }
 
 .headerContent h2 {
@@ -324,6 +324,9 @@ iframe {
   .headerContent {
     height: calc( 100vw*0.5625 );
   }
+  .headerContent img {
+    width: 50%;
+  }
 
   .videoProyecto {
     padding: 56.25% 0 0 0;
@@ -379,6 +382,9 @@ iframe {
 
   .headerContent {
     height: calc( 100vw*0.5625 );
+  }
+  .headerContent img {
+    width: 50%;
   }
 
   .headerContent h2 {
