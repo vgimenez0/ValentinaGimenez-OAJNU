@@ -228,35 +228,6 @@
   transform: scale(1.1);
 }
 
-@-webkit-keyframes popup {
-  0% {
-    width: 0rem;
-    height: 0rem;
-  }
-  50% {
-    width: 8rem;
-    height: 8rem;
-  }
-  100% {
-    width: 6.6rem;
-    height: 6.6rem;
-  }
-}
-
-@keyframes popup {
-  0% {
-    width: 0rem;
-    height: 0rem;
-  }
-  50% {
-    width: 8rem;
-    height: 8rem;
-  }
-  100% {
-    width: 6.6rem;
-    height: 6.6rem;
-  }
-}
 @media all and (min-width: 768px) {
   #videoFondo {
     display: none;
