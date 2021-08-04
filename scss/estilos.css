@@ -39,14 +39,6 @@
   color: #009AA6;
 }
 
-#siteHeader {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  margin: auto;
-}
-
 .logoHorizontal {
   margin: 10px;
   display: block;
@@ -123,10 +115,6 @@
   display: none;
 }
 
-.divSomos:hover {
-  transform: scale(1.2);
-}
-
 .somosFoto {
   width: 100px;
 }
@@ -146,7 +134,8 @@
   background-color: #009AA6;
   border: none;
   border-radius: 10px;
-  margin: 3em;
+  margin-top: 2em;
+  margin-bottom: 2em;
   padding: 10px;
   color: white;
 }
@@ -198,14 +187,6 @@
     background-position: 1799.11px;
   }
 }
-.fijado {
-  position: fixed;
-  bottom: 10px;
-  right: 10px;
-  width: 50px;
-  z-index: 3;
-}
-
 .contAliados {
   width: 300px;
   height: 200px;
@@ -247,6 +228,35 @@
   transform: scale(1.1);
 }
 
+@-webkit-keyframes popup {
+  0% {
+    width: 0rem;
+    height: 0rem;
+  }
+  50% {
+    width: 8rem;
+    height: 8rem;
+  }
+  100% {
+    width: 6.6rem;
+    height: 6.6rem;
+  }
+}
+
+@keyframes popup {
+  0% {
+    width: 0rem;
+    height: 0rem;
+  }
+  50% {
+    width: 8rem;
+    height: 8rem;
+  }
+  100% {
+    width: 6.6rem;
+    height: 6.6rem;
+  }
+}
 @media all and (min-width: 768px) {
   #videoFondo {
     display: none;
@@ -306,6 +316,12 @@
 
   .videoProyectoDesktop {
     display: none;
+  }
+
+  .stickyFooter {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
   }
 }
 @media all and (min-width: 992px) {
@@ -370,9 +386,16 @@
     font-size: 15px;
   }
 
-  .fijado {
-    bottom: 50px;
-    right: 50px;
+  .divSomos:hover {
+    transform: scale(1.2);
+  }
+
+  #proyectos {
+    height: 30em;
+  }
+
+  #sumate {
+    height: 30em;
   }
 
   .contAliados {
@@ -390,5 +413,11 @@
 
   .videoProyecto {
     display: none;
+  }
+
+  .stickyFooter {
+    position: relative;
+    bottom: 0;
+    width: 100%;
   }
 }/*# sourceMappingURL=estilos.css.map */
