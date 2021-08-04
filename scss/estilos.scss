@@ -35,19 +35,19 @@
 }
 
 .logoHorizontal{
-	margin: 10px;
+	margin: 1rem;
 	display: block;
-	width: 200px;
+	width: 20rem;
 }
 
 .logoVertical{
-	margin: 10px;
+	margin: 1rem;
 	display: block;
-	width: 150px;
+	width: 15rem;
 }
 
 .logoRedes{
-	height: 30px;
+	height: 3rem;
 }
 
 #videoFondoLarge{
@@ -106,7 +106,7 @@
 }
 
 .somosFoto{
-	width: 100px;
+	width: 10rem;
 }
 
 #somos{
@@ -123,7 +123,7 @@
 }
 
 .fotoProyecto{
-	width: 300px;
+	width: 30rem;
 	&:hover{
 		transform: scale(1.1);
 	}
@@ -132,10 +132,10 @@
 .boton{
 	background-color: $color-secundario;
 	border: none;
-	border-radius: 10px;
-	margin-top: 2em;
-	margin-bottom: 2em;
-	padding: 10px;
+	border-radius: 1rem;
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+	padding: 1rem;
 	color: white;
     &:hover{
         transform: scale(1.2);
@@ -147,9 +147,9 @@
 .botonNaranja{
 	background-color: $color-primario;
 	border: none;
-	border-radius: 10px;
-	margin: 10px;
-	padding: 10px;
+	border-radius: 1rem;
+	margin: 1rem;
+	padding: 1rem;
 	color: #FFFFFF;
     &:hover{
         transform: scale(1.2);
@@ -181,11 +181,11 @@
 }
 
 .contAliados{
-	width: 300px;
-	height: 200px;
-	margin: 10px;
+	width: 30rem;
+	height: 20rem;
+	margin: 1rem;
 	img{
-		width: 200px;
+		width: 20rem;
 	}
 	&:hover{
 	transform: scale(1.1);
@@ -195,7 +195,7 @@
 .videoProyecto{
 	padding:56.25% 0 0 0;
 	position:relative;
-	margin: 10px;
+	margin: 1rem;
 }
 
 .videoProyectoDesktop{
@@ -210,12 +210,12 @@
 }
 
 .fotoQuienessomos{
-	width: 300px;
+	width: 30rem;
 }
 
 .divQUienessomos{
-	width: 350px;
-	padding-bottom: 20px;
+	width: 35rem;
+	padding-bottom: 2rem;
 	&:hover{
 		transform: scale(1.1);
 	}
@@ -223,9 +223,9 @@
 
 .fijado{
 	position: fixed;
-	bottom: 10px;
-	right: 10px;
-	width: 40px;
+	bottom: 1rem;
+	right: 1rem;
+	width: 4rem;
 }
 
 textarea{
@@ -275,10 +275,10 @@ textarea{
 		flex-wrap: wrap;
 		div{
 			@include flexible(column,center,center);
-			height: 200px;
-			margin: 10px;
+			height: 20rem;
+			margin: 1rem;
 			h4{
-				font-size: 15px;
+				font-size: 1.5rem;
 			}
 		}
 	}
@@ -286,7 +286,7 @@ textarea{
 	.videoProyecto{
 		padding:56.25% 0 0 0;
 		position:relative;
-		margin: 10px;
+		margin: 1rem;
 	}
 	
 	.videoProyectoDesktop{
@@ -294,8 +294,8 @@ textarea{
 	}
 
 	.fijado{
-		bottom: 40px;
-		right: 40px;
+		bottom: 4rem;
+		right: 4rem;
 	}
 
 	.stickyFooter{
@@ -356,9 +356,9 @@ textarea{
 		@include flexible(row,space-around,center);
 		div{
 			@include flexible(column,center,center);
-			height: 200px;
+			height: 20rem;
 			h4{
-				font-size: 15px;
+				font-size: 1.5rem;
 			}
 		}
 	}
@@ -368,11 +368,11 @@ textarea{
 	}
 
 	.contAliados{
-		width: 500px;
-		height: 300px;
-		margin: 20px;
+		width: 50rem;
+		height: 30rem;
+		margin: 2rem;
 		img{
-			width: 400px;
+			width: 40rem;
 		}
 	}
 
@@ -385,8 +385,8 @@ textarea{
 	}
 
 	.fijado{
-		bottom: 50px;
-		right: 50px;
+		bottom: 5rem;
+		right: 5rem;
 	}
 
 	.stickyFooter{
