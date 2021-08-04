@@ -34,135 +34,29 @@
 	color: $color-secundario;
 }
 
-.divCarousel{
-	height: 500px;
+#siteHeader {
+	@include flexible(row,center,center);
+	margin: auto;
 }
 
-#proyectos div div{
-	height:350px;
-}
-
-#sumate div div{
-	height:350px;
-}
-
-.logo-horizontal{
+.logoHorizontal{
 	margin: 10px;
 	display: block;
 	width: 200px;
 }
 
-.logo-vertical{
+.logoVertical{
 	margin: 10px;
 	display: block;
 	width: 150px;
 }
 
-.tituloPrincipal{
-	margin: auto;
-	text-align: center;
-}
-
-.videoOAJNU{
-	width: 100%;
-	height: 50vh;
-	padding: 10px;
-}
-
-.boton{
-	background-color: $color-secundario;
-	border: none;
-	margin: 10px;
-	a{
-        color: #FFFFFF;
-        text-decoration: none;
-    }
-    &:hover{
-        transform: scale(1.2);
-        background-color: #FFFFFF;
-        border: solid 0.5px $color-secundario;
-		color: $color-secundario;
-		a{
-			color: $color-secundario;
-		}
-    }
-    &:active{
-        background-color: $color-secundario;
-        border: none;
-        color: #FFFFFF;
-        text-decoration: none;
-    }
-}
-
-.botonNaranja{
-	background-color: $color-primario;
-	border: none;
-	margin: 10px;
-	padding: 10px;
-	a{
-        color: #FFFFFF;
-        text-decoration: none;
-		font-size: 1.2rem;
-    }
-    &:hover{
-        transform: scale(1.2);
-        background-color: #FFFFFF;
-        border: solid 0.5px $color-primario;
-		color: $color-primario;
-		a{
-			color: $color-primario;
-		}
-    }
-    &:active{
-        background-color: $color-primario;
-        border: none;
-        color: #FFFFFF;
-        text-decoration: none;
-    }
-}
-
-iframe{
-	margin:0;
-	padding: 0;
-}
-
-.somosFoto{
-	width: 100px;
-}
-
-#somos{
-	display: none;
-}
-
-#somosM{
-	display: none;
-}
-
-#aliados{
-	display: none;
-}
 .logoRedes{
 	height: 30px;
 }
 
-.fijado{
-	position: fixed;
-	bottom: 10px;
-	right: 10px;
-	width: 50px;
-	z-index: 3;
-}
-
-.fotoProyecto{
-	width: 300px;
-}
-
-.fotoQuienessomos{
-	width: 300px;
-}
-
-.divQUienessomos{
-	width: 350px;
+#videoFondoLarge{
+	display: none;
 }
 
 .headerVideo{
@@ -198,17 +92,12 @@ iframe{
 	img{
 		width: 70%;
 	}
+	h2{
+		display: none;;
+	}
 }
 
-.headerContent h2{
-	display: none;
-}
-
-#videofondoDesktop{
-	display: none;
-}
-
-#banner {
+#banner{
 	h2{
 	font-size: 1.5rem;
 	}
@@ -217,7 +106,64 @@ iframe{
 	}
 }
 
-.contenedorSlider{
+.divCarousel{
+	height: 500px;
+}
+
+#somosM{
+	display: none;
+}
+
+.divSomos:hover{
+	transform: scale(1.2);
+}
+
+.somosFoto{
+	width: 100px;
+}
+
+#somos{
+	display: none;
+}
+
+.fotoProyecto{
+	width: 300px;
+	&:hover{
+		transform: scale(1.1);
+	}
+}
+
+.boton{
+	background-color: $color-secundario;
+	border: none;
+	border-radius: 10px;
+	margin: 3em;
+	padding: 10px;
+	color: white;
+    &:hover{
+        transform: scale(1.2);
+        background-color: #FFFFFF;
+        border: solid 0.5px $color-secundario;
+		color: $color-secundario;
+    }
+}
+
+.botonNaranja{
+	background-color: $color-primario;
+	border: none;
+	border-radius: 10px;
+	margin: 10px;
+	padding: 10px;
+	color: #FFFFFF;
+    &:hover{
+        transform: scale(1.2);
+        background-color: #FFFFFF;
+        border: solid 0.5px $color-primario;
+		color: $color-primario;
+    }
+}
+
+#contenedorSlider{
 	width: 100%;
 	margin:auto;
 	overflow: hidden;
@@ -238,6 +184,14 @@ iframe{
 	
 }
 
+.fijado{
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
+	width: 50px;
+	z-index: 3;
+}
+
 .contAliados{
 	width: 300px;
 	height: 200px;
@@ -245,10 +199,9 @@ iframe{
 	img{
 		width: 200px;
 	}
-}
-
-.footerVoluntariado{
-	bottom: 0;
+	&:hover{
+	transform: scale(1.1);
+	}
 }
 
 .videoProyecto{
@@ -261,37 +214,31 @@ iframe{
 	display: none;
 }
 
+.textoProyecto{
+	background-color: #e8e8e8;
+	&:hover{
+	transform: scale(1.1);
+	}
+}
+
+.fotoQuienessomos{
+	width: 300px;
+}
+
+.divQUienessomos{
+	width: 350px;
+	padding-bottom: 20px;
+	&:hover{
+		transform: scale(1.1);
+	}
+}
+
 @media all and (min-width: 768px){
-	#somosM{
-		@include flexible(row,space-around,center);
-		flex-wrap: wrap;
-		div{
-			@include flexible(column,center,center);
-		}
-	}
-
-	#somos{
+	#videoFondo{
 		display: none;
 	}
 
-	#carouselSomos{
-		display: none;
-	}
-
-	#somosM div h4{
-		font-size: 15px;
-	}
-
-	#somosM div{
-		height: 200px;
-		margin: 10px;
-	}
-
-	#videofondo{
-		display: none;
-	}
-
-	#videofondoDesktop{
+	#videoFondoLarge{
 		display: block;
 	}
 
@@ -308,6 +255,27 @@ iframe{
 		img{
 			width: 50%;
 		}
+	}
+
+	#carouselSomos{
+		display: none;
+	}
+
+	#somosM{
+		@include flexible(row,space-around,center);
+		flex-wrap: wrap;
+		div{
+			@include flexible(column,center,center);
+			height: 200px;
+			margin: 10px;
+			h4{
+				font-size: 15px;
+			}
+		}
+	}
+
+	#somos{
+		display: none;
 	}
 
 	.videoProyecto{
@@ -322,30 +290,11 @@ iframe{
 }
 
 @media all and (min-width: 992px){
-	#somos{
-		@include flexible(row,space-around,center);
-		div{
-			@include flexible(column,center,center);
-		}
-	}
-
-	#somosM{
+	#videoFondo{
 		display: none;
 	}
 
-	#carouselSomos{
-		display: none;
-	}
-	
-	#banner h1{
-		font-size: 2.5rem;
-	}
-
-	#videofondo{
-		display: none;
-	}
-
-	#videofondoDesktop{
+	#videoFondoLarge{
 		display: block;
 	}
 
@@ -362,69 +311,42 @@ iframe{
 		img{
 			width: 50%;
 		}
-	}
-		
-	.headerContent h2{
-		@include flexible(column,center,center);
+		h2{
+			@include flexible(column,center,center);
+		}
 	}
 
-	#banner h2{
+	#banner{
+		h1{
+			font-size: 2.5rem;
+		}
+		h2{
+			display: none;
+		}
+	}
+
+	#carouselSomos{
 		display: none;
 	}
 
-	#aliados{
-		@include flexible(row,space-between,center);
-		margin-bottom: 3;
-		overflow: auto;
-	}
-	
-	.aliadosFoto{
-		height: 100px;
-	}
-
-	#carouselAliados{
+	#somosM{
 		display: none;
 	}
 
-	#siteHeader {
-		@include flexible(row,center,center);
-		margin: auto;
+	#somos{
+		@include flexible(row,space-around,center);
+		div{
+			@include flexible(column,center,center);
+			height: 200px;
+			h4{
+				font-size: 15px;
+			}
+		}
 	}
 
 	.fijado{
 		bottom: 50px;
 		right: 50px;
-	}
-
-	.divSomos:hover{
-		transform: scale(1.2);
-	}
-
-	#somos div h4{
-		font-size: 15px;
-	}
-
-	#somos div{
-		height: 200px;
-	}
-	
-	.fotoProyecto:hover{
-		transform: scale(1.2);
-	}
-
-	.divQuienesSomos{
-		padding-bottom: 20px;
-		&:hover{
-			transform: scale(1.1);
-		}
-
-	}
-
-	.textoProyecto{
-		background-color: #e8e8e8;
-		&:hover{
-		transform: scale(1.2);
-		}
 	}
 
 	.contAliados{
@@ -433,10 +355,6 @@ iframe{
 		margin: 20px;
 		img{
 			width: 400px;
-		}
-
-		&:hover{
-			transform: scale(1.1);
 		}
 	}
 
@@ -447,5 +365,4 @@ iframe{
 	.videoProyecto{
 		display: none;
 	}
-
 }
