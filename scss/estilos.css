@@ -40,19 +40,19 @@
 }
 
 .logoHorizontal {
-  margin: 10px;
+  margin: 0.5rem;
   display: block;
-  width: 200px;
+  width: 12.5rem;
 }
 
 .logoVertical {
-  margin: 10px;
+  margin: 0.5rem;
   display: block;
-  width: 150px;
+  width: 9.3rem;
 }
 
 .logoRedes {
-  height: 30px;
+  height: 1.8rem;
 }
 
 #videoFondoLarge {
@@ -100,11 +100,28 @@
   display: none;
 }
 
-#banner h2 {
-  font-size: 1.5rem;
-}
-#banner h1 {
+h1 {
   font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.7rem;
+}
+
+h3 {
+  font-size: 1.3rem;
+}
+
+h4 {
+  font-size: 1.3rem;
+}
+
+h5 {
+  font-size: 1rem;
+}
+
+p {
+  font-size: 1rem;
 }
 
 .divCarousel {
@@ -112,7 +129,7 @@
 }
 
 .somosFoto {
-  width: 100px;
+  width: 6.3rem;
 }
 
 #somos {
@@ -129,7 +146,7 @@
 }
 
 .fotoProyecto {
-  width: 300px;
+  width: 18.8rem;
 }
 .fotoProyecto:hover {
   transform: scale(1.1);
@@ -138,10 +155,10 @@
 .boton {
   background-color: #009AA6;
   border: none;
-  border-radius: 10px;
-  margin-top: 2em;
-  margin-bottom: 2em;
-  padding: 10px;
+  border-radius: 0.5rem;
+  margin-top: 1.3rem;
+  margin-bottom: 1.3rem;
+  padding: 0.5rem;
   color: white;
 }
 .boton:hover {
@@ -154,9 +171,9 @@
 .botonNaranja {
   background-color: #E05206;
   border: none;
-  border-radius: 10px;
-  margin: 10px;
-  padding: 10px;
+  border-radius: 0.5rem;
+  margin: 0.5rem;
+  padding: 0.5rem;
   color: #FFFFFF;
 }
 .botonNaranja:hover {
@@ -193,12 +210,12 @@
   }
 }
 .contAliados {
-  width: 300px;
-  height: 200px;
-  margin: 10px;
+  width: 18.8rem;
+  height: 12.5rem;
+  margin: 0.5rem;
 }
 .contAliados img {
-  width: 200px;
+  width: 12.5rem;
 }
 .contAliados:hover {
   transform: scale(1.1);
@@ -207,7 +224,7 @@
 .videoProyecto {
   padding: 56.25% 0 0 0;
   position: relative;
-  margin: 10px;
+  margin: 1rem;
 }
 
 .videoProyectoDesktop {
@@ -222,12 +239,12 @@
 }
 
 .fotoQuienessomos {
-  width: 300px;
+  width: 18.8rem;
 }
 
 .divQUienessomos {
-  width: 350px;
-  padding-bottom: 20px;
+  width: 21.9rem;
+  padding-bottom: 2rem;
 }
 .divQUienessomos:hover {
   transform: scale(1.1);
@@ -235,9 +252,9 @@
 
 .fijado {
   position: fixed;
-  bottom: 10px;
-  right: 10px;
-  width: 40px;
+  bottom: 0.5rem;
+  right: 0.5rem;
+  width: 2.5rem;
 }
 
 textarea {
@@ -292,17 +309,17 @@ textarea {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 200px;
-    margin: 10px;
+    height: 12.5rem;
+    margin: 0.5rem;
   }
   #somos div h4 {
-    font-size: 15px;
+    font-size: 1rem;
   }
 
   .videoProyecto {
     padding: 56.25% 0 0 0;
     position: relative;
-    margin: 10px;
+    margin: 0.5rem;
   }
 
   .videoProyectoDesktop {
@@ -310,8 +327,8 @@ textarea {
   }
 
   .fijado {
-    bottom: 40px;
-    right: 40px;
+    bottom: 2.5rem;
+    right: 2.5rem;
   }
 
   .stickyFooter {
@@ -359,10 +376,34 @@ textarea {
   }
 
   #banner h1 {
-    font-size: 2.5rem;
+    font-size: 3rem;
   }
   #banner h2 {
     display: none;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 2.2rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  h4 {
+    font-size: 1.5rem;
+  }
+
+  h5 {
+    font-size: 1rem;
+  }
+
+  p {
+    font-size: 1rem;
   }
 
   #carouselSomos {
@@ -380,31 +421,23 @@ textarea {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 200px;
+    height: 12.5rem;
   }
   #somos div h4 {
-    font-size: 15px;
+    font-size: 1rem;
   }
 
   .divSomos:hover {
     transform: scale(1.2);
   }
 
-  #proyectos {
-    height: 35em;
-  }
-
-  #sumate {
-    height: 35em;
-  }
-
   .contAliados {
-    width: 500px;
-    height: 300px;
-    margin: 20px;
+    width: 31rem;
+    height: 18.8rem;
+    margin: 1.2rem;
   }
   .contAliados img {
-    width: 400px;
+    width: 25rem;
   }
 
   .videoProyectoDesktop {
@@ -416,8 +449,8 @@ textarea {
   }
 
   .fijado {
-    bottom: 50px;
-    right: 50px;
+    bottom: 3.1rem;
+    right: 3.1rem;
   }
 
   .stickyFooter {
@@ -427,10 +460,10 @@ textarea {
   }
 
   #proyectos h2 {
-    padding-top: 4rem;
+    padding-top: 2.5rem;
   }
 
   #sumate h2 {
-    padding-top: 4rem;
+    padding-top: 2.5rem;
   }
 }/*# sourceMappingURL=estilos.css.map */
