@@ -255,6 +255,7 @@ p {
   bottom: 0.5rem;
   right: 0.5rem;
   width: 2.5rem;
+  z-index: 3;
 }
 
 textarea {
