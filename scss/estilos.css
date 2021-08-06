@@ -100,6 +100,10 @@
   display: none;
 }
 
+:root {
+  font-size: 14px;
+}
+
 h1 {
   font-size: 2rem;
 }
@@ -108,19 +112,11 @@ h2 {
   font-size: 1.7rem;
 }
 
-h3 {
+h3, h4 {
   font-size: 1.3rem;
 }
 
-h4 {
-  font-size: 1.3rem;
-}
-
-h5 {
-  font-size: 1rem;
-}
-
-p {
+h5, p {
   font-size: 1rem;
 }
 
@@ -153,13 +149,13 @@ p {
 }
 
 .boton {
-  background-color: #009AA6;
   border: none;
   border-radius: 0.5rem;
+  background-color: #009AA6;
+  color: white;
   margin-top: 1.3rem;
   margin-bottom: 1.3rem;
   padding: 0.5rem;
-  color: white;
 }
 .boton:hover {
   transform: scale(1.2);
@@ -169,12 +165,12 @@ p {
 }
 
 .botonNaranja {
-  background-color: #E05206;
   border: none;
   border-radius: 0.5rem;
+  background-color: #E05206;
+  color: white;
   margin: 0.5rem;
   padding: 0.5rem;
-  color: #FFFFFF;
 }
 .botonNaranja:hover {
   transform: scale(1.2);
@@ -188,14 +184,13 @@ p {
   margin: auto;
   overflow: hidden;
 }
-
-#slider {
+#contenedorSlider #slider {
   width: 1800px;
   height: 130px;
   background-image: url("../media/ALIDOS.png");
   background-size: 100% 100%;
-  -webkit-animation: slider 20s infinite linear;
-          animation: slider 20s infinite linear;
+  -webkit-animation: slider 30s infinite linear;
+          animation: slider 30s infinite linear;
 }
 
 @-webkit-keyframes slider {
@@ -271,7 +266,7 @@ textarea {
 }
 
 @media all and (min-width: 768px) {
-  #videoFondo {
+  #videoFondo, #carouselSomos, .videoProyectoDesktop {
     display: none;
   }
 
@@ -279,11 +274,7 @@ textarea {
     display: block;
   }
 
-  .headerVideo {
-    height: calc( 100vw*0.5625 );
-  }
-
-  .headerOverlay {
+  .headerVideo, .headerOverlay {
     height: calc( 100vw*0.5625 );
   }
 
@@ -292,10 +283,6 @@ textarea {
   }
   .headerContent img {
     width: 50%;
-  }
-
-  #carouselSomos {
-    display: none;
   }
 
   #somos {
@@ -323,10 +310,6 @@ textarea {
     margin: 0.5rem;
   }
 
-  .videoProyectoDesktop {
-    display: none;
-  }
-
   .fijado {
     bottom: 2.5rem;
     right: 2.5rem;
@@ -347,28 +330,14 @@ textarea {
     margin: auto;
   }
 
-  #videoFondo {
+  .videoProyecto {
     display: none;
   }
 
-  #videoFondoLarge {
-    display: block;
+  .videoProyectoDesktop {
+    display: flex;
   }
 
-  .headerVideo {
-    height: calc( 100vw*0.5625 );
-  }
-
-  .headerOverlay {
-    height: calc( 100vw*0.5625 );
-  }
-
-  .headerContent {
-    height: calc( 100vw*0.5625 );
-  }
-  .headerContent img {
-    width: 50%;
-  }
   .headerContent h2 {
     display: flex;
     flex-direction: column;
@@ -376,56 +345,16 @@ textarea {
     align-items: center;
   }
 
-  #banner h1 {
-    font-size: 3rem;
-  }
   #banner h2 {
     display: none;
   }
 
-  h1 {
-    font-size: 3rem;
-  }
-
-  h2 {
-    font-size: 2.2rem;
-  }
-
-  h3 {
-    font-size: 1.5rem;
-  }
-
-  h4 {
-    font-size: 1.5rem;
-  }
-
-  h5 {
-    font-size: 1rem;
-  }
-
-  p {
-    font-size: 1rem;
-  }
-
-  #carouselSomos {
-    display: none;
+  :root {
+    font-size: 16px;
   }
 
   #somos {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-  }
-  #somos div {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 12.5rem;
-  }
-  #somos div h4 {
-    font-size: 1rem;
+    flex-wrap: nowrap;
   }
 
   .divSomos:hover {
@@ -441,14 +370,6 @@ textarea {
     width: 25rem;
   }
 
-  .videoProyectoDesktop {
-    display: flex;
-  }
-
-  .videoProyecto {
-    display: none;
-  }
-
   .fijado {
     bottom: 3.1rem;
     right: 3.1rem;
@@ -460,11 +381,7 @@ textarea {
     width: 100%;
   }
 
-  #proyectos h2 {
-    padding-top: 2.5rem;
-  }
-
-  #sumate h2 {
+  #proyectos h2, #sumate h2 {
     padding-top: 2.5rem;
   }
 }/*# sourceMappingURL=estilos.css.map */
