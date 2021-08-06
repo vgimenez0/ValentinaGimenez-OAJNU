@@ -225,15 +225,10 @@ h5, p {
   transform: scale(1.1);
 }
 
-.divQUienessomos {
-  width: 21.9rem;
-  padding-bottom: 2rem;
-}
-
 .fijado {
   position: fixed;
-  bottom: 0.5rem;
-  right: 0.5rem;
+  bottom: 1rem;
+  right: 1rem;
   width: 2.5rem;
   z-index: 3;
 }
@@ -295,11 +290,6 @@ textarea {
     margin: 0.5rem;
   }
 
-  .fijado {
-    bottom: 2.5rem;
-    right: 2.5rem;
-  }
-
   .stickyFooter {
     position: absolute;
     bottom: 0;
@@ -343,7 +333,7 @@ textarea {
   }
 
   .divSomos:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
   }
 
   .contAliados {
@@ -353,11 +343,6 @@ textarea {
   }
   .contAliados img {
     width: 25rem;
-  }
-
-  .fijado {
-    bottom: 3.1rem;
-    right: 3.1rem;
   }
 
   .stickyFooter {
