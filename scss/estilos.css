@@ -39,6 +39,26 @@
   color: #009AA6;
 }
 
+:root {
+  font-size: 14px;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.7rem;
+}
+
+h3, h4 {
+  font-size: 1.3rem;
+}
+
+h5, p {
+  font-size: 1rem;
+}
+
 .logoHorizontal {
   margin: 0.5rem;
   display: block;
@@ -55,7 +75,7 @@
   height: 1.8rem;
 }
 
-#videoFondoLarge {
+#videoFondoLarge, #somos, .videoProyectoDesktop {
   display: none;
 }
 
@@ -100,36 +120,12 @@
   display: none;
 }
 
-:root {
-  font-size: 14px;
-}
-
-h1 {
-  font-size: 2rem;
-}
-
-h2 {
-  font-size: 1.7rem;
-}
-
-h3, h4 {
-  font-size: 1.3rem;
-}
-
-h5, p {
-  font-size: 1rem;
-}
-
 .divCarousel {
   height: 30rem;
 }
 
 .somosFoto {
   width: 6.3rem;
-}
-
-#somos {
-  display: none;
 }
 
 #proyectos h2 {
@@ -141,10 +137,10 @@ h5, p {
   padding-bottom: 2rem;
 }
 
-.fotoProyecto {
+.fotoProyecto, .fotoQuienessomos {
   width: 18.8rem;
 }
-.fotoProyecto:hover {
+.fotoProyecto:hover, .fotoQuienessomos:hover {
   transform: scale(1.1);
 }
 
@@ -222,10 +218,6 @@ h5, p {
   margin: 1rem;
 }
 
-.videoProyectoDesktop {
-  display: none;
-}
-
 .textoProyecto {
   background-color: #e8e8e8;
 }
@@ -233,16 +225,9 @@ h5, p {
   transform: scale(1.1);
 }
 
-.fotoQuienessomos {
-  width: 18.8rem;
-}
-
 .divQUienessomos {
   width: 21.9rem;
   padding-bottom: 2rem;
-}
-.divQUienessomos:hover {
-  transform: scale(1.1);
 }
 
 .fijado {
